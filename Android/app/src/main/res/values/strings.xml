@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cloud Computing</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="usertype">
+        <item>Customer</item>
+        <item>Salesperson</item>
+    </string-array>
+</resources>

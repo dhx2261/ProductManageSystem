@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_CreateProduct">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/addimage" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal" />
+
+        <com.unstoppable.submitbuttonview.SubmitButton
+            android:id="@+id/sbtn_loading"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:buttonText="Submit"
+            app:buttonTextSize="25sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Reset"
+        android:theme="@style/LogInButtonStyle" />
+
+</LinearLayout>
